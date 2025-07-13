@@ -1,0 +1,22 @@
+{
+  "name": "wecs-website",
+  "version": "1.0.0",
+  "description": "creating a website for wecs society uni of southampton",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo 'No build step needed for static HTML' && copy src\\*.html dist && copy src\\css\\*.css dist\\css && copy src\\js\\*.js dist\\js",
+    "start": "live-server src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhyskp/wecs-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhyskp/wecs-website/issues"
+  },
+  "homepage": "https://github.com/dhyskp/wecs-website#readme"
+}
