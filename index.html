@@ -1,22 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Tech Society @ University</title>
-    <link rel="stylesheet" href="styles/main.css">
+  <title>Romantic Aesthetic Site</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Raleway', sans-serif;
+      background: #F9CBD6; /* Soft pink background */
+      color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+      background: #F2E0D2; /* Off-white container */
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      color: #9E182B; /* Deep red for headings */
+      font-size: 2.5rem;
+    }
+    .btn {
+      background: #9E182B;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #7a1221; /* Slightly darker red on hover */
+    }
+    .secondary-btn {
+      background: #F2AFBC; /* Mid-tone pink */
+      color: #333;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Tech Society!</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="events.html">Events</a>
-        </nav>
-    </header>
-    <main>
-        <section id="upcoming-events">
-            <h2>Next Event: Hackathon 2024</h2>
-        </section>
-    </main>
+  <div class="container">
+    <h1>Women in ECS</h1>
+    <p>University of Southampton 2026</p>
+    <button class="btn">Explore</button>
+    <button class="btn secondary-btn">Learn More</button>
+  </div>
 </body>
 </html>
