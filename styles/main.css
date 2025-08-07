@@ -1,11 +1,140 @@
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    line-height: 1.6;
-    color: #333;
+@font-face {
+  font-family: 'HeadingFont';
+  src: url("/fonts/millaris/millaris.ttf") format('woff2');
 }
-header {
-    background: #0066cc; /* Society brand color */
-    color: white;
-    padding: 1rem;
+@font-face {
+  font-family: 'BodyFont';
+  src: url("/fonts/lgc/Louis\ George\ Cafe\ Bold.ttf") format('woff2');
+}
+
+body {
+  font-family: 'BodyFont', sans-serif;
+  background: #F2E0D2;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: rgba(249, 203, 214, 0.8);
+  border-bottom: 3px solid #9E182B;
+}
+
+.logo {
+  height: 70px;
+  width: auto;
+}
+
+.header-text {
+  font-family: 'HeadingFont', serif;
+  color: #9E182B;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 30px;
+  border: 3px solid #9E182B;
+  border-radius: 15px;
+  background: rgba(249, 203, 214, 0.3);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.hero {
+  position: relative;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  background: linear-gradient(to right, #F9CBD6 0%, #F2E0D2 100%);
+}
+
+.hero-img {
+  height: 100%;
+  width: auto;
+  max-width: 50%;
+  object-fit: cover;
+  margin-left: 10%;
+}
+
+.hero-title {
+  font-family: 'HeadingFont', serif;
+  font-size: 5rem;
+  color: #9E182B;
+  margin-left: 5%;
+  text-shadow: 3px 3px 0 rgba(242, 175, 188, 0.4);
+  line-height: 1.1;
+}
+
+.nav-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.nav-button {
+  position: relative;
+  padding: 30px;
+  background: #F9CBD6;
+  border: none;
+  border-radius: 10px;
+  font-family: 'HeadingFont', serif;
+  font-size: 2rem;
+  color: #9E182B;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.nav-button::before {
+  content: '';
+  position: absolute;
+  left: -15px;
+  top: 15px;
+  width: 60px;
+  height: 100%;
+  background: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 5px,
+    #F2AFBC 5px,
+    #F2AFBC 10px
+  );
+  transform: skewX(15deg);
+  z-index: 1;
+}
+
+.nav-button:hover {
+  transform: translateY(-5px);
+  background: #F2AFBC;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    flex-direction: column;
+    padding: 40px 0;
+  }
+  .hero-img {
+    width: 80%;
+    max-width: 100%;
+    margin: 0 auto;
+    height: auto;
+  }
+  .hero-title {
+    font-size: 3rem;
+    margin: 20px 0;
+    text-align: center;
+  }
+  .nav-container {
+    grid-template-columns: 1fr;
+  }
 }
