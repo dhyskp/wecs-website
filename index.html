@@ -10,36 +10,39 @@
       margin: 0;
       padding: 0;
       text-align: center;
-      overflow-x: hidden;
     }
+    
     .hero {
       position: relative;
       min-height: 100vh;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
+      padding: 20px;
     }
+    
+    /* hopefully no container */
     .hero-img {
-      width: 80%;
-      max-width: 600px;
-      height: auto;
+      width: auto;
+      max-height: 60vh;
+      max-width: 90%;
+      margin-top: -50px;
       position: relative;
       z-index: 1;
-      margin-top: -50px; /*image pulled down hopefully*/
-      border: 8px solid #F9CBD6;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     }
+    
     .title {
       font-family: 'Playfair Display', serif;
       font-size: 4rem;
       color: #9E182B;
       position: relative;
       z-index: 2;
-      margin-top: -100px; /* text over image */
+      margin-bottom: -30px;
       text-shadow: 2px 2px 0 #F2AFBC;
-      background: rgba(242, 224, 210, 0.7);
       padding: 0 20px;
     }
+    
     .title::after {
       content: "";
       display: block;
@@ -49,38 +52,17 @@
       margin: 10px auto;
       border-radius: 2px;
     }
-    .doodle {
-      position: absolute;
-      opacity: 0.6;
-      z-index: 3;
-    }
-    .doodle-1 {
-      top: 20%;
-      left: 10%;
-      width: 60px;
-      color: #F2AFBC;
-    }
-    .doodle-2 {
-      bottom: 15%;
-      right: 10%;
-      width: 50px;
-      color: #9E182B;
+    
+    @media (max-width: 768px) {
+      .title { font-size: 2.5rem; }
+      .hero-img { max-height: 50vh; }
     }
   </style>
 </head>
 <body>
   <div class="hero">
     <h1 class="title">Women in ECS</h1>
-    
-    <img src="images/lily.png" alt="Lily" class="hero-img">
-    
-    <!-- doodle elements test -->
-    <svg class="doodle doodle-1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-      <path d="M50 10 L90 50 L50 90 L10 50 Z" fill="none" stroke="currentColor" stroke-width="3"/>
-    </svg>
-    <svg class="doodle doodle-2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-      <path d="M20 50 Q50 10 80 50 T20 50" fill="none" stroke="currentColor" stroke-width="3"/>
-    </svg>
+    <img src="images/lily.png" alt="Women in ECS" class="hero-img">
   </div>
 </body>
 </html>
