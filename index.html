@@ -1,54 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Romantic Aesthetic Site</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400&display=swap" rel="stylesheet">
+  <title>Women in ECS | Uni of Southampton</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Raleway', sans-serif;
-      background: #F9CBD6; /* Soft pink background */
-      color: #333;
+      font-family: 'Comic Neue', cursive;
+      background: #F2E0D2;
       margin: 0;
       padding: 0;
-      line-height: 1.6;
+      text-align: center;
     }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 40px;
-      background: #F2E0D2; /* Off-white container */
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    .hero {
+      position: relative;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
     }
-    h1 {
+    .hero-img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 8px solid #F9CBD6;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      position: relative;
+      z-index: 2;
+    }
+    .title {
       font-family: 'Playfair Display', serif;
-      color: #9E182B; /* Deep red for headings */
-      font-size: 2.5rem;
+      font-size: 4rem;
+      color: #9E182B;
+      position: relative;
+      z-index: 3;
+      margin-top: -50px;
+      text-shadow: 2px 2px 0 #F2AFBC;
     }
-    .btn {
+    .title::after {
+      content: "";
+      display: block;
+      width: 60%;
+      height: 4px;
       background: #9E182B;
-      color: white;
-      padding: 12px 24px;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: 0.3s;
+      margin: 10px auto;
+      border-radius: 2px;
     }
-    .btn:hover {
-      background: #7a1221; /* Slightly darker red on hover */
+    .doodle {
+      position: absolute;
+      opacity: 0.6;
     }
-    .secondary-btn {
-      background: #F2AFBC; /* Mid-tone pink */
-      color: #333;
+    .doodle-1 {
+      top: 20%;
+      left: 10%;
+      width: 60px;
+      color: #F2AFBC;
+    }
+    .doodle-2 {
+      bottom: 15%;
+      right: 10%;
+      width: 50px;
+      color: #9E182B;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Women in ECS</h1>
-    <p>University of Southampton 2026</p>
-    <button class="btn">Explore</button>
-    <button class="btn secondary-btn">Learn More</button>
+  <div class="hero">
+    <!-- Lily's image (replace with actual image) -->
+    <img src="https://freeimage.host/i/FiPxzIR" alt="Lily" class="hero-img">
+    
+    <!-- Doodle elements (SVGs or PNGs) -->
+    <svg class="doodle doodle-1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <path d="M50 10 L90 50 L50 90 L10 50 Z" fill="none" stroke="currentColor" stroke-width="3"/>
+    </svg>
+    <svg class="doodle doodle-2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20 50 Q50 10 80 50 T20 50" fill="none" stroke="currentColor" stroke-width="3"/>
+    </svg>
+    
+    <!-- Title -->
+    <h1 class="title">Women in ECS</h1>
   </div>
 </body>
 </html>
