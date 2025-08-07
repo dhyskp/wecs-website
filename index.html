@@ -2,85 +2,143 @@
 <html>
 <head>
   <title>Women in ECS | Uni of Southampton</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    @font-face {
+      font-family: 'HeadingFont';
+      src: url('fonts/millaris/millaris.ttf') format('woff2');
+    }
+    @font-face {
+      font-family: 'BodyFont';
+      src: url('fonts/lgc/Louis\ George\ Cafe\ Bold.ttf') format('woff2');
+    }
+
     body {
-      font-family: 'Comic Neue', cursive;
+      font-family: 'BodyFont', sans-serif;
       background: #F2E0D2;
       margin: 0;
       padding: 0;
-      overflow-x: hidden;
     }
-    
-    /*creating a container for the header*/
+
+    .container {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 30px;
+      border: 3px solid #9E182B;
+      border-radius: 15px;
+      background: rgba(249, 203, 214, 0.3);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
     .header {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 15px 30px;
       background: rgba(249, 203, 214, 0.8);
-      border-bottom: 2px solid #F2AFBC;
-      position: relative;
-      z-index: 10;
+      border-bottom: 3px solid #9E182B;
+      margin-bottom: 40px;
     }
-    
+
     .logo {
-      height: 60px;
+      height: 70px;
       width: auto;
     }
-    
+
     .header-text {
-      font-family: 'Cormorant Garamond', serif;
-      font-weight: 500;
+      font-family: 'HeadingFont', serif;
       color: #9E182B;
-      font-size: 1.3rem;
-      letter-spacing: 0.5px;
+      font-size: 1.5rem;
+      letter-spacing: 1px;
     }
-    /* adjusting lily size */
+
     .hero {
       position: relative;
-      height: 90vh;
+      height: 70vh;
       display: flex;
       align-items: center;
-      padding: 0 5%;
+      margin-bottom: 50px;
     }
-    
+
     .hero-img {
       position: absolute;
-      height: 100vh;
-      width: auto;
-      max-width: none;
+      width: 60%;
+      height: 100%;
+      object-fit: cover;
       left: 0;
       top: 0;
-      object-fit: cover;
       z-index: 1;
     }
-    
-    .title {
-      font-family: 'Cormorant Garamond', serif;
-      font-weight: 700;
-      font-size: 5rem;
+
+    .hero-title {
+      font-family: 'HeadingFont', serif;
+      font-size: 4.5rem;
       color: #9E182B;
       position: relative;
       z-index: 2;
-      margin-left: 40%;
+      margin-left: 50%;
       text-shadow: 3px 3px 0 rgba(242, 175, 188, 0.4);
-      mix-blend-mode: multiply;
-      line-height: 1;
+      line-height: 1.1;
     }
-    
+
+    .nav-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      margin-top: 60px;
+    }
+
+    .nav-button {
+      position: relative;
+      padding: 30px;
+      background: #F9CBD6;
+      border: none;
+      border-radius: 10px;
+      font-family: 'HeadingFont', serif;
+      font-size: 2rem;
+      color: #9E182B;
+      text-align: left;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      overflow: hidden;
+    }
+
+    .nav-button::after {
+      content: '';
+      position: absolute;
+      right: -15px;
+      top: 15px;
+      width: 60px;
+      height: 100%;
+      background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 5px,
+        #F2AFBC 5px,
+        #F2AFBC 10px
+      );
+      transform: skewX(-15deg);
+      z-index: 1;
+    }
+
+    .nav-button:hover {
+      transform: translateY(-5px);
+      background: #F2AFBC;
+      color: white;
+    }
+
     @media (max-width: 768px) {
+      .hero {
+        height: 50vh;
+      }
       .hero-img {
         width: 100%;
-        height: auto;
       }
-      .title {
-        font-size: 3rem;
+      .hero-title {
         margin-left: 10%;
-        margin-top: 40%;
-        mix-blend-mode: normal;
-        background: rgba(242, 224, 210, 0.7);
-        padding: 20px;
+        font-size: 3rem;
+      }
+      .nav-container {
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -90,10 +148,19 @@
     <img src="images/logo.png" alt="Society Logo" class="logo">
     <div class="header-text">University of Southampton</div>
   </div>
-  
-  <div class="hero">
-    <img src="images/lily.png" alt="Women in ECS" class="hero-img">
-    <h1 class="title">Women in ECS</h1>
+
+  <div class="container">
+    <div class="hero">
+      <img src="images/lily.png" alt="Women in ECS" class="hero-img">
+      <h1 class="hero-title">Women in ECS</h1>
+    </div>
+
+    <div class="nav-container">
+      <button class="nav-button">About Us</button>
+      <button class="nav-button">Committee</button>
+      <button class="nav-button">Events</button>
+      <button class="nav-button">Merch</button>
+    </div>
   </div>
 </body>
 </html>
