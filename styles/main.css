@@ -139,8 +139,9 @@ body {
 .divider {
   display: block;
   position: relative;
-  left: -5%;
+  left: -1%;
   width: 100vw;
+  transform: translateX(-50%);
   max-width: none;
   overflow-x: hidden;
   margin-bottom: -5px;
