@@ -210,7 +210,7 @@ body {
 }
 
 .year {
-  color: var(--pink-light);
+  color: black;
   font-weight: bold;
 }
 
@@ -221,8 +221,8 @@ body {
   padding: 60px 80px; /* keep some padding for content */
   background-color: var(--cream);
   background-image: 
-    linear-gradient(var(--pink-medium) 3px, transparent 3px),
-    linear-gradient(90deg, var(--pink-medium) 3px, transparent 3px);
+    linear-gradient(var(--red-dark) 5px, transparent 5px),
+    linear-gradient(90deg, var(--red-dark) 5px, transparent 5px);
   background-size: 70px 70px; /* adjusting grid padding */
   background-position: center center;
   min-height: 100vh;
