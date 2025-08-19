@@ -6,6 +6,10 @@
   font-family: 'BodyFont';
   src: url("/fonts/lgc/Louis\ George\ Cafe\ Bold.ttf") format('woff2');
 }
+@font-face {
+  font-family: 'ScratchyLemon';
+  src: url("/fonts/scratchylemon/Scratchy\ Lemon.ttf") format('woff2')
+}
 
 * {
   margin: 0;
@@ -35,7 +39,7 @@ body {
 
 .header {
   position: fixed;
-  top: 10px; left: 10px; right: 10px;
+  top: 20px; left: 20px; right: 20px;
   z-index: 1000;
   display: flex;
   justify-content: space-between;
@@ -53,7 +57,7 @@ body {
 
 .header-text {
   font-family: 'HeadingFont', serif;
-  color: var(--red-dark);
+  color: var(--pink-light);
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -86,7 +90,7 @@ body {
 }
 
 .page-title {
-  font-family: 'HeadingFont', serif;
+  font-family: 'ScratchyLemon', serif;
   font-size: 2.5rem;
   color: var(--red-dark);
   margin-bottom: 20px;
@@ -125,7 +129,7 @@ body {
 }
 
 .home-title {
-  font-family: 'HeadingFont', serif;
+  font-family: 'ScratchyLemon', serif;
   font-size: clamp(2rem, 6vw, 5rem);
   color: var(--red-dark);
   text-shadow: 3px 3px 0 rgba(242, 175, 188, 0.4);
@@ -140,7 +144,7 @@ body {
 
 .solid-divider path {
   stroke: var(--red-dark);
-  stroke-width: 12;
+  stroke-width: 30;
 }
 
 /* about section */
