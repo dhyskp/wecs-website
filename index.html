@@ -7,25 +7,19 @@
 <body>
 <div class="header">
   <img src="images/logo.png" alt="Society Logo" class="logo">
-  <div class="nav-container">
-    <button class="nav-button" onclick="showPage('about')">
-      <i class="fas fa-info-circle"></i> About Us
-    </button>
-    <button class="nav-button" onclick="showPage('committee')">
-      <i class="fas fa-users"></i> Committee
-    </button>
-    <button class="nav-button" onclick="showPage('events')">
-      <i class="fas fa-calendar-alt"></i> Events
-    </button>
-  </div>
   <div class="header-text">University of Southampton</div>
+  <div class="nav-container">
+    <div class="nav-item" onclick="showPage('about')">About Us</div>
+    <div class="nav-item" onclick="showPage('committee')">Committee</div>
+    <div class="nav-item" onclick="showPage('events')">Events</div>
+  </div>
 </div>
 
   <div class="hero">
     <img src="images/lily.png" alt="Women in ECS" class="hero-img">
     <h1 class="hero-title">Women in ECS</h1>
   </div>
-    <!-- About Us Page -->
+
   <div class="main-container page" id="about">
     <h2 class="page-title">About Us</h2>
     <p>Women in ECS is a society at the University of Southampton dedicated to supporting and empowering women in the field of Electronics and Computer Science.</p>
@@ -45,7 +39,6 @@
     <p>Whether you're a current student, alumni, or industry professional, we welcome you to join our community and help us shape the future of women in technology.</p>
   </div>
 
-  <!-- Committee Page -->
   <div class="main-container page" id="committee">
     <h2 class="page-title">Our Committee</h2>
     <p>Meet the dedicated team behind Women in ECS who work tirelessly to create opportunities and support for women in technology.</p>
