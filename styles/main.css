@@ -139,6 +139,7 @@ body {
 .divider {
   display: block;
   width: 100vw;
+  max-width: none;
   overflow-x: hidden;
   margin-bottom: -5px;
 }
