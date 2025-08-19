@@ -184,10 +184,14 @@ body {
 }
 
 /* committee */
-.committee-grid {
+
+.committee {
   background-image: url('/images/backgrounds/2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.committee-grid {
   display: flex;
   justify-content: center;
   gap: 30px;
