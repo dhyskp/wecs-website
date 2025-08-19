@@ -18,6 +18,7 @@
   --pink-medium: #F2AFBC;
   --cream: #F2E0D2;
   --red-dark: #9E182B;
+  --green: #8B9340;
 }
 
 html {
@@ -34,14 +35,14 @@ body {
 
 .header {
   position: fixed;
-  top: 0; left: 0; right: 0;
+  top: 10px; left: 10px; right: 10px;
   z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: black;
+  background: var(--green);
   border-bottom: 3px solid var(--red-dark);
-  padding: 10px 30px;
+  padding: 20px 30px;
   border-radius: 50px 50px 50px 50px; /* rounded */
 }
 
