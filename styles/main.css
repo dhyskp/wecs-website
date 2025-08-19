@@ -138,6 +138,7 @@ body {
 /* squiggly divider */
 .divider {
   display: block;
+  position: relative;
   width: 100vw;
   max-width: none;
   overflow-x: hidden;
