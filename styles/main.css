@@ -176,7 +176,7 @@ body {
 }
 
 .mini-title {
-  font: 'HeadingFont', serif;
+  font: 'HeadingFont', serif !important;
   color: var(--green);
 }
 
