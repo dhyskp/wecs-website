@@ -41,6 +41,7 @@ body {
 .logo {
   height: 70px;
   width: auto;
+  cursor: pointer;
 }
 
 .header-text {
