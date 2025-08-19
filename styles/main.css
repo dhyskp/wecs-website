@@ -69,7 +69,7 @@ body {
 
 .nav-item {
   font-family: 'HeadingFont', serif;
-  color: var(--red-dark);
+  color: var(--pink-light);
   font-size: 1.1rem;
   text-decoration: none;
   transition: color 0.3s ease;
