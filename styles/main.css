@@ -68,7 +68,7 @@ body {
 }
 
 .nav-item {
-  font-family: 'HeadingFont', serif;
+  font-family: 'BodyFont', serif;
   color: var(--pink-light);
   font-size: 1.1rem;
   text-decoration: none;
@@ -115,7 +115,6 @@ body {
   text-align: center;
   position: relative;
 }
-
 
 .home-content {
   display: flex;
@@ -186,6 +185,9 @@ body {
 
 /* committee */
 .committee-grid {
+  background-image: url('/images/backgrounds/2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   gap: 30px;
