@@ -207,6 +207,7 @@ body {
 
 .member-card:hover {
   transform: translateY(-5px);
+  background-color: var(--green);
 }
 
 .member-name {
