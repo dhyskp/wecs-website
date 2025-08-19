@@ -222,7 +222,7 @@ body {
   background-image: 
     linear-gradient(var(--pink-medium) 3px, transparent 3px),
     linear-gradient(90deg, (var(--pink-medium)) 3px, transparent 3px);
-  background-size: 50px 50px; /* adjusting grid padding */
+  background-size: 70px 70px; /* adjusting grid padding */
   background-position: center center;
   min-height: 100vh;
   display: flex;
