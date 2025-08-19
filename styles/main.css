@@ -39,7 +39,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(249, 203, 214, 0.95);
+  background: black;
   border-bottom: 3px solid var(--red-dark);
   padding: 10px 30px;
   border-radius: 50px 50px 50px 50px; /* rounded */
