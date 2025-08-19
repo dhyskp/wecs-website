@@ -139,7 +139,7 @@ body {
 .divider {
   display: block;
   position: relative;
-  width: 100vw + 300px;
+  width: calc(100vw + 300px);
   margin-left: -100px;
   max-width: none;
   overflow-x: hidden;
