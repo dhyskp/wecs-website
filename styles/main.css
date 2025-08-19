@@ -135,10 +135,11 @@ body {
   text-shadow: 3px 3px 0 rgba(242, 175, 188, 0.4);
 }
 
-/* swirly divider */
+/* squiggly divider */
 .divider {
   display: block;
-  width: 100%;
+  width: 100vw;
+  overflow-x: hidden;
   margin-bottom: -5px;
 }
 
