@@ -211,6 +211,7 @@ body {
 
 .member-year {
   color: var(--pink-light);
+  font-weight: bold;
 }
 
 /* events */
