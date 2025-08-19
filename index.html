@@ -12,10 +12,9 @@
 
   <div class="main-container">
     <div class="nav-container">
-      <button class="nav-button">About Us</button>
-      <button class="nav-button">Committee</button>
-      <button class="nav-button">Events</button>
-      <button class="nav-button">Merch</button>
+      <button class="nav-button" onclick="showPage('about')"> About Us</button>
+      <button class="nav-button" onclick="showPage('committee')"> Committee</button>
+      <button class="nav-button" onclick="showPage('events')">Events</button>
     </div>
   </div>
 
@@ -23,5 +22,162 @@
     <img src="images/lily.png" alt="Women in ECS" class="hero-img">
     <h1 class="hero-title">Women in ECS</h1>
   </div>
+    <!-- About Us Page -->
+  <div class="main-container page" id="about">
+    <h2 class="page-title">About Us</h2>
+    <p>Women in ECS is a society at the University of Southampton dedicated to supporting and empowering women in the field of Electronics and Computer Science.</p>
+    
+    <div class="about-content">
+      <div class="about-card">
+        <h3>Our Mission</h3>
+        <p>To create an inclusive environment where women in technology can connect, grow, and succeed through networking events, workshops, and mentorship programs.</p>
+      </div>
+      <div class="about-card">
+        <h3>What We Do</h3>
+        <p>We organize technical workshops, career development sessions, networking events with industry professionals, and social gatherings to build a strong community.</p>
+      </div>
+    </div>
+    
+    <h3 class="join-title">Join Us</h3>
+    <p>Whether you're a current student, alumni, or industry professional, we welcome you to join our community and help us shape the future of women in technology.</p>
+  </div>
+
+  <!-- Committee Page -->
+  <div class="main-container page" id="committee">
+    <h2 class="page-title">Our Committee</h2>
+    <p>Meet the dedicated team behind Women in ECS who work tirelessly to create opportunities and support for women in technology.</p>
+    
+    <div class="committee-grid">
+      <div class="member-card">
+        <img src="" alt="Abha Desai" class="member-img">
+        <div class="member-info">
+          <h3 class="member-name">Abha Desai</h3>
+          <p class="member-role">President</p>
+          <p>3rd year computer science student</p>
+        </div>
+      </div>
+      
+      <div class="member-card">
+        <img src="" alt="Ruhi Agarwal" class="member-img">
+        <div class="member-info">
+          <h3 class="member-name">Ruhi Agarwal</h3>
+          <p class="member-role">Vice President</p>
+          <p>3rd year electronics engineering student</p>
+        </div>
+      </div>
+      
+      <div class="member-card">
+        <img src="" alt="Sophia Advincula" class="member-img">
+        <div class="member-info">
+          <h3 class="member-name">Sophia Advincula</h3>
+          <p class="member-role">Events Officer</p>
+          <p>2nd year software engineering student</p>
+        </div>
+      </div>
+      
+      <div class="member-card">
+        <img src="" alt="Semeli Kyriacou" class="member-img">
+        <div class="member-info">
+          <h3 class="member-name">Semeli Kyriacou</h3>
+          <p class="member-role">Marketing Officer</p>
+          <p>4th year computer science student</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <div class="member-card">
+        <img src="" alt="Rawna Madani" class="member-img">
+        <div class="member-info">
+          <h3 class="member-name">Rawna Madani</h3>
+          <p class="member-role">Marketing Team</p>
+          <p>2nd year biomedical engineering student</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <div class="member-card">
+        <img src="" alt="Emilie Sales" class="member-img">
+        <div class="member-info">
+          <h3 class="member-name">Emilie Sales</h3>
+          <p class="member-role">Treasurer</p>
+          <p>2nd year computer science student</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <div class="member-card">
+        <img src="" alt="Helen Sun" class="member-img">
+        <div class="member-info">
+          <h3 class="member-name">Helen Sun</h3>
+          <p class="member-role">Industry Officer</p>
+          <p>2nd year electrical and electronics engineering student</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <div class="member-card">
+        <img src="" alt="Arun Muthu" class="member-img">
+        <div class="member-info">
+          <h3 class="member-name">Arun Muthu</h3>
+          <p class="member-role">Tech/Academic Officer</p>
+          <p>2nd year computer science student</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <div class="member-card">
+        <img src="" alt="Tatiana Nicolopoulos" class="member-img">
+        <div class="member-info">
+          <h3 class="member-name">Tatiana Nicolopoulos</h3>
+          <p class="member-role">Welfare Officer</p>
+          <p>2nd year biomedical engineering student</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <div class="member-card">
+        <img src="" alt="Indigo Wolf-Garraway" class="member-img">
+        <div class="member-info">
+          <h3 class="member-name">Indigo Wolf-Garraway</h3>
+          <p class="member-role">Outreach Officer</p>
+          <p>2nd year computer science student</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Events Page -->
+  <div class="main-container page" id="events">
+    <h2 class="page-title">Upcoming Events</h2>
+    <p>Join us for these exciting events designed to inspire, educate, and connect women in technology.</p>
+    
+    <div class="events-list">
+      <div class="event-card">
+        <div class="event-date">
+          <span class="event-day">15</span>
+          <span class="event-month">Oct</span>
+        </div>
+        <div class="event-details">
+          <h3 class="event-title">Women in Tech Panel Discussion</h3>
+          <p>Join us for an inspiring panel discussion with successful women in the tech industry sharing their experiences and career advice.</p>
+          <p><i class="fas fa-map-marker-alt"></i> Building 32, Room 1013 | <i class="fas fa-clock"></i> 6:00 PM - 8:00 PM</p>
+        </div>
+      </div>
+
+  <div class="footer">
+    <h3>Connect With Us</h3>
+    <div class="social-links">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p>Women in ECS Society | University of Southampton</p>
+  </div>
+
 </body>
 </html>

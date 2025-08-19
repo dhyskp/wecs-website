@@ -7,9 +7,22 @@
   src: url("/fonts/lgc/Louis\ George\ Cafe\ Bold.ttf") format('woff2');
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pink-light: #F9CBD6;
+  --pink-medium: #F2AFBC;
+  --cream: #F2E0D2;
+  --red-dark: #9E182B;
+}
+
 body {
   font-family: 'BodyFont', sans-serif;
-  background: #F2E0D2;
+  background: var(--cream);
   margin: 0;
   padding: 0;
 }
@@ -20,7 +33,10 @@ body {
   align-items: center;
   padding: 15px 30px;
   background: rgba(249, 203, 214, 0.8);
-  border-bottom: 3px solid #9E182B;
+  border-bottom: 3px solid var(--red-dark);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .logo {
@@ -30,16 +46,17 @@ body {
 
 .header-text {
   font-family: 'HeadingFont', serif;
-  color: #9E182B;
+  color: var(--red-dark);
   font-size: 1.5rem;
   letter-spacing: 1px;
+  font-weight: bold;
 }
 
 .main-container {
   max-width: 1200px;
   margin: 30px auto;
   padding: 30px;
-  border: 3px solid #9E182B;
+  border: 3px solid var(--red-dark);
   border-radius: 15px;
   background: rgba(249, 203, 214, 0.3);
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
@@ -51,7 +68,9 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 40px;
-  background: linear-gradient(to right, #F9CBD6 0%, #F2E0D2 100%);
+  background: linear-gradient(to right, var(--pink-light) 0%, var(--cream) 100%);
+  border-radius: 15 px;
+  overflow: hidden;
 }
 
 .hero-img {
@@ -65,7 +84,7 @@ body {
 .hero-title {
   font-family: 'HeadingFont', serif;
   font-size: 5rem;
-  color: #9E182B;
+  color: var(--red-dark);
   margin-left: 5%;
   text-shadow: 3px 3px 0 rgba(242, 175, 188, 0.4);
   line-height: 1.1;
@@ -81,16 +100,17 @@ body {
 .nav-button {
   position: relative;
   padding: 30px;
-  background: #F9CBD6;
+  background: var(--pink-light);
   border: none;
   border-radius: 10px;
   font-family: 'HeadingFont', serif;
   font-size: 2rem;
-  color: #9E182B;
+  color: var(--red-dark);
   text-align: left;
   cursor: pointer;
   transition: all 0.3s ease;
   overflow: hidden;
+  padding-left: 70px;
 }
 
 .nav-button::before {
@@ -104,8 +124,8 @@ body {
     45deg,
     transparent,
     transparent 5px,
-    #F2AFBC 5px,
-    #F2AFBC 10px
+    var(--pink-medium) 5px,
+    var(--pink-medium) 10px
   );
   transform: skewX(15deg);
   z-index: 1;
@@ -113,8 +133,221 @@ body {
 
 .nav-button:hover {
   transform: translateY(-5px);
-  background: #F2AFBC;
+  background: var(--pink-medium);
   color: white;
+}
+
+.page {
+  display: none;
+  padding: 20px;
+}
+
+.page.active {
+  display: block;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+.page-title {
+  font-family: 'BodyFont', serif;
+  color: var(--red-dark);
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  border-bottom: 3px solid var(--pink-medium);
+  padding-bottom: 10px;
+}
+
+.about-content {
+  display: flex;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.about-card {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.about-card h3 {
+  color: var(--red-dark);
+  margin-bottom: 15px;
+}
+
+.join-title {
+  color: var(--red-dark);
+  margin: 30px 0 15px;
+}
+
+.committee-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.member-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-10px);
+}
+
+.member-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 3px solid var(--pink-medium);
+}
+
+.member-info {
+  padding: 20px;
+}
+
+.member-name {
+  font-family: 'Georgia', serif;
+  color: var(--red-dark);
+  margin-bottom: 5px;
+}
+
+.member-role {
+  color: var(--pink-medium);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.event-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.event-date {
+  background: var(--red-dark);
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+}
+
+.event-day {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.event-month {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.event-details {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.event-title {
+  font-family: 'Georgia', serif;
+  color: var(--red-dark);
+  margin-bottom: 10px;
+}
+
+.merch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.merch-item {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.merch-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.merch-info {
+  padding: 20px;
+}
+
+.merch-title {
+  font-family: 'Georgia', serif;
+  color: var(--red-dark);
+  margin-bottom: 10px;
+}
+
+.merch-price {
+  color: var(--red-dark);
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.btn-buy {
+  background: var(--red-dark);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn-buy:hover {
+  background: var(--pink-medium);
+}
+
+.footer {
+  background: var(--red-dark);
+  color: white;
+  padding: 40px 0;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.social-links a {
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--pink-light);
 }
 
 @media (max-width: 768px) {
@@ -123,18 +356,35 @@ body {
     flex-direction: column;
     padding: 40px 0;
   }
+  
   .hero-img {
     width: 80%;
     max-width: 100%;
     margin: 0 auto;
     height: auto;
   }
+  
   .hero-title {
     font-size: 3rem;
     margin: 20px 0;
     text-align: center;
   }
+  
   .nav-container {
     grid-template-columns: 1fr;
+  }
+  
+  .event-card {
+    flex-direction: column;
+  }
+  
+  .event-date {
+    flex-direction: row;
+    justify-content: space-around;
+    min-width: auto;
+  }
+  
+  .about-content {
+    flex-direction: column;
   }
 }
