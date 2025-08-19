@@ -261,7 +261,7 @@ body {
 }
 
 .event-date {
-  background: var(--red-dark);
+  background: var(--green);
   color: white;
   padding: 20px;
   display: flex;
