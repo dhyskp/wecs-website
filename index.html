@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <title>Women in ECS | Uni of Southampton</title>
   <link rel="stylesheet" href="styles/main.css">
 </head>
-
 <body>
-  <div class="header">
-    <div class="nav-container" id="navContainer">
-      <div class="nav-item" onclick="showPage('home')">Home</div>
-      <div class="nav-item" onclick="showPage('about')">About Us</div>
-      <div class="nav-item" onclick="showPage('committee')">Committee</div>
-      <div class="nav-item" onclick="showPage('events')">Events</div>
-    </div>
-    <div class="header-text">University of Southampton</div>
+<div class="header">
+  <img src="images/logo.png" alt="Society Logo" class="logo">
+  <div class="header-text">University of Southampton</div>
+  <div class="nav-container">
+    <div class="nav-item" onclick="showPage('about')">About Us</div>
+    <div class="nav-item" onclick="showPage('committee')">Committee</div>
+    <div class="nav-item" onclick="showPage('events')">Events</div>
   </div>
+</div>
 
   <div class="hero">
     <img src="images/lily.png" alt="Women in ECS" class="hero-img">
@@ -23,58 +21,52 @@
   </div>
 
   <div id="home-content" class="home-content">
-    <h2 class="home-title">Welcome to Women in ECS</h2>
-    <p class="home-text">We are a society at the University of Southampton dedicated to supporting and empowering women
-      in Electronics and Computer Science.</p>
-
-    <div class="feature-grid">
-      <div class="feature-card">
-        <h3 class="feature-title">Our Community</h3>
-        <p>Join our growing network of women in technology</p>
-      </div>
-      <div class="feature-card">
-        <h3 class="feature-title">Events</h3>
-        <p>Participate in workshops, networking sessions, and social events</p>
-      </div>
-      <div class="feature-card">
-        <h3 class="feature-title">Support</h3>
-        <p>Get mentorship and career guidance from industry professionals</p>
-      </div>
-      <div class="feature-card">
-        <h3 class="feature-title">Socials</h3>
-        <p>Get to know the committee and other members with fun nights out/in</p>
-      </div>
+  <h2 class="home-title">Welcome to Women in ECS</h2>
+  <p class="home-text">We are a society at the University of Southampton dedicated to supporting and empowering women in Electronics and Computer Science.</p>
+  
+  <div class="feature-grid">
+    <div class="feature-card">
+      <h3 class="feature-title">Our Community</h3>
+      <p>Join our growing network of women in technology</p>
+    </div>
+    <div class="feature-card">
+      <h3 class="feature-title">Events</h3>
+      <p>Participate in workshops, networking sessions, and social events</p>
+    </div>
+    <div class="feature-card">
+      <h3 class="feature-title">Support</h3>
+      <p>Get mentorship and career guidance from industry professionals</p>
+    </div>
+    <div class="feature-card">
+      <h3 class="feature-title">Socials</h3>
+      <p>Get to know the committee and other members with fun nights out/in</p>
     </div>
   </div>
+</div>
 
   <div class="main-container page" id="about">
     <h2 class="page-title">About Us</h2>
-    <p>Women in ECS is a society at the University of Southampton dedicated to supporting and empowering women in the
-      field of Electronics and Computer Science.</p>
-
+    <p>Women in ECS is a society at the University of Southampton dedicated to supporting and empowering women in the field of Electronics and Computer Science.</p>
+    
     <div class="about-content">
       <div class="about-card">
         <h3>Our Mission</h3>
-        <p>To create an inclusive environment where women in technology can connect, grow, and succeed through
-          networking events, workshops, and mentorship programs.</p>
+        <p>To create an inclusive environment where women in technology can connect, grow, and succeed through networking events, workshops, and mentorship programs.</p>
       </div>
       <div class="about-card">
         <h3>What We Do</h3>
-        <p>We organize technical workshops, career development sessions, networking events with industry professionals,
-          and socials to build a strong community.</p>
+        <p>We organize technical workshops, career development sessions, networking events with industry professionals, and socials to build a strong community.</p>
       </div>
     </div>
-
+    
     <h3 class="join-title">Join Us</h3>
-    <p>Become part of a vibrant community that empowers, supports, and celebrates women in ECS. Together we're breaking
-      barriers and building a more inclusive tech industry.</p>
+    <p>Become part of a vibrant community that empowers, supports, and celebrates women in ECS. Together we're breaking barriers and building a more inclusive tech industry.</p>
   </div>
 
   <div class="main-container page" id="committee">
     <h2 class="page-title">Our Committee</h2>
-    <p>Meet the dedicated team behind Women in ECS who work tirelessly to create opportunities and support for women in
-      technology.</p>
-
+    <p>Meet the dedicated team behind Women in ECS who work tirelessly to create opportunities and support for women in technology.</p>
+    
     <div class="committee-grid">
       <div class="member-card">
         <div class="member-info">
@@ -83,7 +75,7 @@
           <p>3rd year computer science student</p>
         </div>
       </div>
-
+      
       <div class="member-card">
         <div class="member-info">
           <h3 class="member-name">Ruhi Agarwal</h3>
@@ -91,7 +83,7 @@
           <p>3rd year electronics engineering student</p>
         </div>
       </div>
-
+      
       <div class="member-card">
         <div class="member-info">
           <h3 class="member-name">Sophia Advincula</h3>
@@ -99,7 +91,7 @@
           <p>2nd year software engineering student</p>
         </div>
       </div>
-
+      
       <div class="member-card">
         <div class="member-info">
           <h3 class="member-name">Semeli Kyriacou</h3>
@@ -162,7 +154,7 @@
   <div class="main-container page" id="events">
     <h2 class="page-title">Upcoming Events</h2>
     <p>Join us for these exciting events designed to inspire, educate, and connect women in technology.</p>
-
+    
     <div class="events-list">
       <div class="event-card">
         <div class="event-date">
@@ -171,51 +163,47 @@
         </div>
         <div class="event-details">
           <h3 class="event-title">Women in Tech Panel Discussion</h3>
-          <p>Join us for an inspiring panel discussion with successful women in the tech industry sharing their
-            experiences and career advice.</p>
-          <p><i class="fas fa-map-marker-alt"></i> Building 32, Room 1013 | <i class="fas fa-clock"></i> 6:00 PM - 8:00
-            PM</p>
+          <p>Join us for an inspiring panel discussion with successful women in the tech industry sharing their experiences and career advice.</p>
+          <p><i class="fas fa-map-marker-alt"></i> Building 32, Room 1013 | <i class="fas fa-clock"></i> 6:00 PM - 8:00 PM</p>
         </div>
       </div>
 
-      <div class="footer">
-        <h3>Connect With Us</h3>
-        <div class="social-links">
-          <a href="https://www.instagram.com/ecswomen/"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.linkedin.com/company/ecswomen/posts/?feedView=all"><i class="fab fa-linkedin"></i></a>
-        </div>
-        <p>Women in ECS Society | University of Southampton</p>
-      </div>
+  <div class="footer">
+    <h3>Connect With Us</h3>
+    <div class="social-links">
+      <a href="https://www.instagram.com/ecswomen/"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/company/ecswomen/posts/?feedView=all"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p>Women in ECS Society | University of Southampton</p>
+  </div>
 
-      <script>
-        function showPage(pageId) {
-          document.querySelectorAll('.page').forEach(page => {
-            page.classList.remove('active');
-          });
-          document.getElementById('home-content').style.display = 'none';
+<script>
+function showPage(pageId) {
+  document.querySelectorAll('.page').forEach(page => {
+    page.classList.remove('active');
+  });
+  document.getElementById('home-content').style.display = 'none';
+  
+  document.getElementById(pageId).classList.add('active');
+  
+  document.getElementById(pageId).scrollIntoView({behavior: 'smooth'});
+}
 
-          document.getElementById(pageId).classList.add('active');
+function showHome() {
+  document.querySelectorAll('.page').forEach(page => {
+    page.classList.remove('active');
+  });
+  
+  document.getElementById('home-content').style.display = 'block';
+  
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
 
-          document.getElementById(pageId).scrollIntoView({ behavior: 'smooth' });
-        }
+document.addEventListener('DOMContentLoaded', function() {
+  showHome();
+});
 
-        function showHome() {
-          document.querySelectorAll('.page').forEach(page => {
-            page.classList.remove('active');
-          });
-
-          document.getElementById('home-content').style.display = 'block';
-
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-
-        document.addEventListener('DOMContentLoaded', function () {
-          showHome();
-        });
-
-        document.querySelector('.logo').addEventListener('click', showHome);
-      </script>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+document.querySelector('.logo').addEventListener('click', showHome);
+</script>
 </body>
-
 </html>
