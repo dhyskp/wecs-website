@@ -25,18 +25,23 @@ body {
   background: var(--cream);
   margin: 0;
   padding: 0;
+  padding-top: 70px;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
-  background: rgba(249, 203, 214, 0.8);
+  padding: 0 20px;
+  background: rgba(249, 203, 214, 0.95);
   border-bottom: 3px solid var(--red-dark);
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 100;
+  left: 0;
+  right: 0;
+  height: 60px;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -91,41 +96,41 @@ body {
 }
 
 .nav-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  margin-top: 20px;
+  display: flex;
+  gap: 10px;
 }
 
 .nav-button {
   position: relative;
-  padding: 30px;
+  padding: 10px 15px;
   background: var(--pink-light);
   border: none;
-  border-radius: 10px;
+  border-radius: 6px;
   font-family: 'HeadingFont', serif;
-  font-size: 2rem;
+  font-size: 0.9rem;
   color: var(--red-dark);
-  text-align: left;
+  text-align: center;
   cursor: pointer;
   transition: all 0.3s ease;
   overflow: hidden;
-  padding-left: 70px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .nav-button::before {
   content: '';
   position: absolute;
-  left: -15px;
-  top: 15px;
-  width: 60px;
-  height: 100%;
+  left: -8px;
+  top: 5px;
+  width: 30px;
+  height: calc(100% - 10px);
   background: repeating-linear-gradient(
     45deg,
     transparent,
-    transparent 5px,
-    var(--pink-medium) 5px,
-    var(--pink-medium) 10px
+    transparent 3px,
+    var(--pink-medium) 3px,
+    var(--pink-medium) 6px
   );
   transform: skewX(15deg);
   z-index: 1;
