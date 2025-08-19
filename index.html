@@ -83,8 +83,6 @@
           <p>4th year computer science student</p>
         </div>
       </div>
-    </div>
-  </div>
 
       <div class="member-card">
         <img src="" alt="Rawna Madani" class="member-img">
@@ -94,8 +92,6 @@
           <p>2nd year biomedical engineering student</p>
         </div>
       </div>
-    </div>
-  </div>
 
       <div class="member-card">
         <img src="" alt="Emilie Sales" class="member-img">
@@ -105,8 +101,6 @@
           <p>2nd year computer science student</p>
         </div>
       </div>
-    </div>
-  </div>
 
       <div class="member-card">
         <img src="" alt="Helen Sun" class="member-img">
@@ -116,8 +110,6 @@
           <p>2nd year electrical and electronics engineering student</p>
         </div>
       </div>
-    </div>
-  </div>
 
       <div class="member-card">
         <img src="" alt="Arun Muthu" class="member-img">
@@ -127,8 +119,6 @@
           <p>2nd year computer science student</p>
         </div>
       </div>
-    </div>
-  </div>
 
       <div class="member-card">
         <img src="" alt="Tatiana Nicolopoulos" class="member-img">
@@ -138,8 +128,6 @@
           <p>2nd year biomedical engineering student</p>
         </div>
       </div>
-    </div>
-  </div>
 
       <div class="member-card">
         <img src="" alt="Indigo Wolf-Garraway" class="member-img">
@@ -178,6 +166,22 @@
     </div>
     <p>Women in ECS Society | University of Southampton</p>
   </div>
+
+<script>
+    function showPage(pageId) {
+      document.querySelectorAll('.page').forEach(page => {
+        page.classList.remove('active');
+      });
+      
+      document.getElementById(pageId).classList.add('active');
+      
+      document.getElementById(pageId).scrollIntoView({behavior: 'smooth'});
+    }
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      showPage('about');
+    });
+  </script>
 
 </body>
 </html>
