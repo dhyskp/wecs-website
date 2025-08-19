@@ -42,7 +42,7 @@ body {
   background: rgba(249, 203, 214, 0.95);
   border-bottom: 3px solid var(--red-dark);
   padding: 10px 30px;
-  border-radius: 0 0 50px 50px; /* rounded */
+  border-radius: 50px 50px 50px 50px; /* rounded */
 }
 
 .logo {
