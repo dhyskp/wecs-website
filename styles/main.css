@@ -175,6 +175,11 @@ body {
   border-radius: 15px;
 }
 
+.mini-title {
+  font: 'HeadingFont', serif;
+  color: var(--green);
+}
+
 /* committee */
 .committee-grid {
   display: flex;
