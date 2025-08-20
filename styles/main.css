@@ -50,11 +50,9 @@ body {
   left: 0;
   right: 0;
   z-index: 1000;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   background: var(--green);
   border-bottom: 3px solid var(--red-dark);
   padding: clamp(10px, 3vw, 20px);
@@ -371,7 +369,7 @@ body {
     width: 100%;
     text-align: center;
   }
-  
+
   .menu-checkbox:checked + .menu-toggle + .nav-container {
     display: flex;
   }
