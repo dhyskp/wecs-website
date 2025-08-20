@@ -14,13 +14,14 @@
 
   <!-- header -->
   <header class="header">
-    <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
-      ☰
-    </button>
+    <a href="index.html">
+      <img src="images/logo.png" alt="Society Logo" class="logo">
+    </a>
 
     <div class="header-text">University of Southampton</div>
 
-    <img src="images/logo.png" alt="Society Logo" class="logo" />
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+    <label for="menu-toggle" class="menu-toggle">☰</label>
 
     <!-- navigation -->
     <nav class="nav-container">
@@ -30,17 +31,6 @@
       <a href="#events" class="nav-item">Events</a>
     </nav>
   </header>
-
-  <script>
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navContainer = document.querySelector('.nav-container');
-
-    menuToggle.addEventListener('click', () => {
-      const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
-      menuToggle.setAttribute('aria-expanded', !expanded);
-      navContainer.classList.toggle('active');
-    });
-  </script>
 
   <!-- home section -->
   <section id="home" class="home section">

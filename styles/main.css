@@ -1,17 +1,17 @@
 /* fonts */
 @font-face {
   font-family: 'HeadingFont';
-  src: url("/fonts/millaris/millaris.ttf") format('woff2');
+  src: url("/fonts/millaris/millaris.ttf") format('truetype');
 }
 
 @font-face {
   font-family: 'BodyFont';
-  src: url("/fonts/lgc/Louis George Cafe Bold.ttf") format('woff2');
+  src: url("/fonts/lgc/Louis George Cafe Bold.ttf") format('truetype');
 }
 
 @font-face {
   font-family: 'ScratchyLemon';
-  src: url("/fonts/scratchylemon/Scratchy Lemon.ttf") format('woff2');
+  src: url("/fonts/scratchylemon/Scratchy Lemon.ttf") format('truetype');
 }
 
 * {
@@ -60,13 +60,15 @@ body {
   padding: clamp(10px, 3vw, 20px);
 }
 
+.menu-checkbox {
+  display: none;
+}
+
 /* menu toggle (shown on mobile, hidden on desktop) */
 .menu-toggle {
   display: none;
   font-size: clamp(1.2rem, 5vw, 2rem);
   color: var(--pink-light);
-  background: none;
-  border: none;
   cursor: pointer;
 }
 
@@ -368,6 +370,10 @@ body {
     border-radius: 10px;
     width: 100%;
     text-align: center;
+  }
+  
+  .menu-checkbox:checked + .menu-toggle + .nav-container {
+    display: flex;
   }
 
   .nav-container.active {
