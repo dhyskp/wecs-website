@@ -165,7 +165,7 @@ body {
   padding: clamp(30px, 6vw, 60px) clamp(20px, 5vw, 40px);
   border-radius: 50% 50% 45% 55% / 65% 50% 55% 50%;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-  max-width: clamp(300px, 80vw, 1200px);
+  max-width: clamp(300px, 80vw, 3200px);
   width: 100%;
   text-align: center;
   transition: all 0.3s ease;
