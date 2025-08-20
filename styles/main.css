@@ -181,7 +181,7 @@ body {
   margin-bottom: 10px;
 }
 
-.cloud-container h2 {
+.cloud-container h3 {
   font-size: clamp(1.5rem, 4vw, 2.5rem); /* larger but still scales */
   margin-bottom: 20px;
 }
