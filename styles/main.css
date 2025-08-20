@@ -359,8 +359,7 @@ body {
 
 @media (max-width: 768px) {
   .menu-toggle {
-    display: block;
-    /* show button */
+    display: none;
   }
 
   .nav-container {
