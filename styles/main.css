@@ -1,17 +1,17 @@
 /* fonts */
 @font-face {
   font-family: 'HeadingFont';
-  src: url("/fonts/millaris/millaris.ttf") format('woff2');
+  src: url("/fonts/millaris/millaris.ttf") format('truetype');
 }
 
 @font-face {
   font-family: 'BodyFont';
-  src: url("/fonts/lgc/Louis George Cafe Bold.ttf") format('woff2');
+  src: url("/fonts/lgc/Louis George Cafe Bold.ttf") format('truetype');
 }
 
 @font-face {
   font-family: 'ScratchyLemon';
-  src: url("/fonts/scratchylemon/Scratchy Lemon.ttf") format('woff2');
+  src: url("/fonts/scratchylemon/Scratchy Lemon.ttf") format('truetype');
 }
 
 * {
@@ -39,7 +39,7 @@ body {
   color: #333;
   overflow-x: hidden;
   line-height: 1.5;
-  font-size: clamp(0.3rem, 2vw, 2rem);
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
 }
 
 /* header */
@@ -58,9 +58,14 @@ body {
   border-radius: 20px;
 }
 
-/* menu toggle */
+/* checkbox hidden */
+.menu-checkbox {
+  display: none;
+}
+
+/* menu toggle button */
 .menu-toggle {
-  display: block;
+  display: none;
   font-size: clamp(0.5rem, 5vw, 1.5rem);
   color: var(--pink-light);
   background: none;
@@ -69,7 +74,6 @@ body {
   order: 1;
 }
 
-/* center text */
 .header-text {
   order: 2;
   flex: 1;
@@ -87,7 +91,6 @@ body {
   cursor: pointer;
 }
 
-/* nav (hidden on mobile, shown on desktop) */
 .nav-container {
   order: 4;
   display: flex;
@@ -96,7 +99,6 @@ body {
   margin-top: 10px;
 }
 
-/* nav links */
 .nav-item {
   font-family: 'BodyFont', serif;
   color: var(--pink-light);
@@ -212,7 +214,7 @@ body {
 .committee-section {
   position: relative;
   overflow: hidden;
-  background-image: url('/images/backgrounds/3.jpg');
+  background-image: url('images/backgrounds/3.jpg');
   background-size: cover;
   background-position: center;
   color: white;
@@ -356,15 +358,13 @@ body {
 }
 
 /* responsive breakpoints */
-
 @media (max-width: 768px) {
   .menu-toggle {
-    display: none;
+    display: block;
   }
 
   .nav-container {
     display: none;
-    /* hide links by default */
     flex-direction: column;
     gap: 15px;
     width: 100%;
@@ -374,9 +374,9 @@ body {
     margin-top: 10px;
   }
 
-  .nav-container.active {
+  /* show menu when checkbox checked */
+  .menu-checkbox:checked ~ .nav-container {
     display: flex;
-    /* show when toggled */
   }
 }
 
@@ -427,3 +427,4 @@ body {
     min-width: 100%;
   }
 }
+
