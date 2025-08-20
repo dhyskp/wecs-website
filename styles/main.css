@@ -187,11 +187,6 @@ body {
   z-index: 2;
 }
 
-.solid-divider path {
-  stroke: var(--green);
-  stroke-width: 37;
-}
-
 /* committee */
 
 .committee-section {
