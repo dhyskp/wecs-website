@@ -53,7 +53,8 @@ body {
   justify-content: space-between;
   align-items: center;
   background: var(--green);
-  border-bottom: 3px solid var(--red-dark);
+  border-bottom: 3px dashed var(--red-dark);
+  border-right: 3px dashed var(--red-dark);
   padding: clamp(10px, 3vw, 25px);
   border-radius: 20px;
 }
@@ -365,7 +366,7 @@ body {
 
   .nav-container {
     display: none;
-    flex-direction: column;
+    flex-direction: row;
     gap: 15px;
     width: 100%;
     background: var(--green);
