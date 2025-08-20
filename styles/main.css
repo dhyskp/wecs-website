@@ -27,12 +27,14 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   font-family: 'BodyFont', serif;
   background: var(--cream);
   color: #333;
+  overflow-x: hidden;
 }
 
 /* header */
