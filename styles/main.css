@@ -176,17 +176,6 @@ body {
   color: var(--green);
 }
 
-/* squiggly divider */
-.divider {
-  display: block;
-  width: 100%;
-  height: 100px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-}
-
 /* committee */
 
 .committee-section {
