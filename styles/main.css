@@ -55,6 +55,8 @@ body {
   padding: 20px 30px;
   border-radius: 50px 50px 50px 50px;
   /* rounded */
+  flex-wrap: wrap;
+  /* small screen fix */
 }
 
 .logo {
@@ -71,13 +73,15 @@ body {
 
 .nav-container {
   display: flex;
-  gap: 20px;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .nav-item {
   font-family: 'BodyFont', serif;
   color: var(--pink-light);
-  font-size: 1.1rem;
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -98,7 +102,7 @@ body {
 
 .page-title {
   font-family: 'ScratchyLemon', serif;
-  font-size: 4.5rem;
+  font-size: clamp(2rem, 6vw, 4.5rem);
   color: var(--red-dark);
   margin-bottom: 20px;
   text-align: center;
@@ -149,7 +153,7 @@ body {
 
 .cloud-container {
   background: white;
-  padding: 120px;
+  padding: clamp(40px, 8vw, 120px);
   border-radius: 50% 50% 45% 55% / 65% 50% 55% 50%;
   /* cloud shape */
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
@@ -203,9 +207,9 @@ body {
 .committee-grid {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 20px;
   flex-wrap: wrap;
-  margin-top: 100px;
+  margin-top: 50px;
   position: relative;
   z-index: 1;
 }
@@ -215,7 +219,7 @@ body {
   padding: 20px;
   text-align: center;
   transition: transform 0.3s ease;
-  width: 250px;
+  width: min(100%, 250px);
   height: auto;
   display: flex;
   align-items: center;
@@ -280,6 +284,7 @@ body {
   border-radius: 15px;
   overflow: hidden;
   border: 2px solid var(--red-dark);
+  flex-direction: column;
 }
 
 .event-date {
@@ -287,10 +292,11 @@ body {
   color: white;
   padding: 20px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-width: 100px;
+  min-width: 100%;
+  flex-direction: row;
+  gap: 10px;
 }
 
 .event-day {
@@ -334,12 +340,65 @@ body {
 }
 
 /* making it responsive */
+
 @media (max-width: 768px) {
   .about-content {
     flex-direction: column;
   }
 
   .home-content {
+    flex-direction: column;
+  }
+
+  .section {
+    padding: 100px 20px 40px;
+  }
+
+  .home-img {
+    max-width: 200px;
+  }
+
+  .committee-section {
+    padding: 40px 20px;
+    padding-top: 80px;
+  }
+
+  .events-section {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .header-text {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .home-title {
+    font-size: clamp(3rem, 12vw, 5rem);
+  }
+
+  .about-card {
+    flex: 1 1 100%;
+  }
+
+  .event-card {
+    text-align: center;
+  }
+
+  .event-date {
     flex-direction: column;
   }
 }
