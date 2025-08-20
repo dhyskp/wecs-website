@@ -57,6 +57,7 @@ body {
   border-bottom: 3px solid var(--red-dark);
   border-right: 3px solid var(--red-dark);
   border-radius: 20px;
+  flex-wrap: wrap;
 }
 
 /* checkbox hidden */
@@ -378,6 +379,7 @@ body {
     padding: 15px;
     border-radius: 15px;
     margin-top: 10px;
+    order: 4;
   }
 
   /* show menu when checkbox checked */
@@ -415,6 +417,7 @@ body {
     flex-direction: column;
     gap: 10px;
     margin-top: 10px;
+    order: 4;
   }
 
   .member-card {
