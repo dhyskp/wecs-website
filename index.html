@@ -8,35 +8,36 @@
 
   <!-- linking css -->
   <link rel="stylesheet" href="styles/main.css">
-
 </head>
 
 <body>
 
   <!-- header -->
-<header class="header">
-  <button class="menu-toggle" aria-label="Toggle Menu">
-    ☰
-  </button>
+  <header class="header">
+    <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
+      ☰
+    </button>
 
-  <div class="header-text">University of Southampton</div>
+    <div class="header-text">University of Southampton</div>
 
-  <img src="images/logo.png" alt="Society Logo" class="logo" />
+    <img src="images/logo.png" alt="Society Logo" class="logo" />
 
-  <!-- navigation (toggled on mobile) -->
-  <nav class="nav-container">
-    <a href="#home" class="nav-item">Home</a>
-    <a href="#about" class="nav-item">About Us</a>
-    <a href="#committee" class="nav-item">Committee</a>
-    <a href="#events" class="nav-item">Events</a>
-  </nav>
-</header>
+    <!-- navigation -->
+    <nav class="nav-container">
+      <a href="#home" class="nav-item">Home</a>
+      <a href="#about" class="nav-item">About Us</a>
+      <a href="#committee" class="nav-item">Committee</a>
+      <a href="#events" class="nav-item">Events</a>
+    </nav>
+  </header>
 
   <script>
     const menuToggle = document.querySelector('.menu-toggle');
     const navContainer = document.querySelector('.nav-container');
 
     menuToggle.addEventListener('click', () => {
+      const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+      menuToggle.setAttribute('aria-expanded', !expanded);
       navContainer.classList.toggle('active');
     });
   </script>
@@ -91,7 +92,7 @@
         <div class="member-info">
           <h3 class="member-name">Abha Desai</h3>
           <p class="member-role">President</p>
-          <p class="year"> 3rd year computer science student</p>
+          <p class="year">3rd year computer science student</p>
         </div>
       </div>
 
@@ -99,7 +100,7 @@
         <div class="member-info">
           <h3 class="member-name">Ruhi Agarwal</h3>
           <p class="member-role">Vice President</p>
-          <p class="year"> 3rd year electronics engineering student</p>
+          <p class="year">3rd year electronics engineering student</p>
         </div>
       </div>
 
@@ -107,7 +108,7 @@
         <div class="member-info">
           <h3 class="member-name">Sophia Advincula</h3>
           <p class="member-role">Events Officer</p>
-          <p class="year"> 2nd year software engineering student</p>
+          <p class="year">2nd year software engineering student</p>
         </div>
       </div>
 
@@ -115,7 +116,7 @@
         <div class="member-info">
           <h3 class="member-name">Semeli Kyriacou</h3>
           <p class="member-role">Marketing Officer</p>
-          <p class="year"> 4th year computer science student</p>
+          <p class="year">4th year computer science student</p>
         </div>
       </div>
 
@@ -123,7 +124,7 @@
         <div class="member-info">
           <h3 class="member-name">Rawna Madani</h3>
           <p class="member-role">Marketing Team</p>
-          <p class="year"> 2nd year biomedical engineering student</p>
+          <p class="year">2nd year biomedical engineering student</p>
         </div>
       </div>
 
@@ -131,7 +132,7 @@
         <div class="member-info">
           <h3 class="member-name">Emilie Sales</h3>
           <p class="member-role">Treasurer</p>
-          <p class="year"> 2nd year computer science student</p>
+          <p class="year">2nd year computer science student</p>
         </div>
       </div>
 
@@ -139,7 +140,7 @@
         <div class="member-info">
           <h3 class="member-name">Helen Sun</h3>
           <p class="member-role">Industry Officer</p>
-          <p class="year"> 2nd year electrical and electronics engineering student</p>
+          <p class="year">2nd year electrical and electronics engineering student</p>
         </div>
       </div>
 
@@ -147,7 +148,7 @@
         <div class="member-info">
           <h3 class="member-name">Arun Muthu</h3>
           <p class="member-role">Tech/Academic Officer</p>
-          <p class="year"> 2nd year computer science student</p>
+          <p class="year">2nd year computer science student</p>
         </div>
       </div>
 
@@ -155,7 +156,7 @@
         <div class="member-info">
           <h3 class="member-name">Tatiana Nicolopoulos</h3>
           <p class="member-role">Welfare Officer</p>
-          <p class="year"> 2nd year biomedical engineering student</p>
+          <p class="year">2nd year biomedical engineering student</p>
         </div>
       </div>
 
@@ -163,7 +164,7 @@
         <div class="member-info">
           <h3 class="member-name">Indigo Wolf-Garraway</h3>
           <p class="member-role">Outreach Officer</p>
-          <p class="year"> 2nd year computer science student</p>
+          <p class="year">2nd year computer science student</p>
         </div>
       </div>
     </div>
@@ -204,7 +205,6 @@
     </div>
     <p>Women in ECS Society | University of Southampton</p>
   </footer>
-
 
 </body>
 
