@@ -54,7 +54,8 @@ body {
   align-items: center;
   background: var(--green);
   padding: clamp(10px, 3vw, 25px);
-  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.4);
+  border-bottom: 3px solid var(--red-dark);
+  border-right: 3px solid var(--red-dark);
 }
 
 /* checkbox hidden */
