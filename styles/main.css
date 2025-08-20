@@ -45,9 +45,6 @@ body {
 /* header */
 .header {
   position: fixed;
-  top: 10px;
-  left: 10px;
-  right: 10px;
   z-index: 1000;
   display: flex;
   justify-content: space-between;
