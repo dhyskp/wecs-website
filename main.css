@@ -379,6 +379,7 @@ body {
     padding: 15px;
     border-radius: 15px;
     margin-top: 10px;
+    order: 3;
   }
 
   /* show menu when checkbox checked */
