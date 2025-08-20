@@ -2,6 +2,6 @@
   "name": "wecs-website",
   "compatibility_date": "2025-08-20",
   "assets": {
-    "directory": "./wecs-website"
+    "directory": "."
   }
 }
