@@ -180,12 +180,13 @@ body {
 
 .committee-section {
   position: relative;
-  padding-top: 0; /* no extra top space */
-  overflow: hidden; /* hide image overflow above divider */
+  overflow: hidden;
   background-image: url('/images/backgrounds/3.jpg');
   background-size: cover;
   background-position: center;
   color: white;
+  padding: 60px 40px;
+  padding-top: 100px;
 }
 
 .divider {
@@ -194,8 +195,10 @@ body {
   left: 0;
   width: 100%;
   height: auto;
-  z-index: 1;
+  z-index: 2;
+  pointer-events: none;
 }
+
 
 .committee-grid {
   display: flex;
