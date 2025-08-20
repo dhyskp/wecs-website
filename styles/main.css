@@ -83,7 +83,6 @@ body {
   color: var(--pink-light);
   font-size: clamp(0.5rem, 2.5vw, 1.5rem);
   font-weight: bold;
-  padding-left: clamp(20px, 5vw, 50px);
 }
 
 .logo {
