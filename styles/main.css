@@ -83,6 +83,7 @@ body {
   color: var(--pink-light);
   font-size: clamp(0.5rem, 2.5vw, 1.5rem);
   font-weight: bold;
+  padding-left: clamp(20px, 5vw, 50px);
 }
 
 .logo {
@@ -90,7 +91,6 @@ body {
   width: clamp(20px, 8vw, 80px);
   height: auto;
   cursor: pointer;
-  padding-right: clamp(20px, 5vw, 50px);
 }
 
 .nav-container {
