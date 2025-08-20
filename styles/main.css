@@ -139,7 +139,6 @@ body {
   display: block;
   position: relative;
   width: calc(100vw + 300px);
-  margin-left: -100px;
   max-width: none;
   overflow-x: hidden;
   margin-bottom: -5px;
