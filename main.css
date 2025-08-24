@@ -184,6 +184,7 @@ body {
   text-align: center;
   transition: all 0.3s ease;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
