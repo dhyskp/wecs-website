@@ -280,16 +280,12 @@ body {
 .events-section {
   padding: 60px 20px;
   background-color: var(--cream);
-  opacity: 0.5;
-  background-image:
-          linear-gradient(30deg, var(--red-dark) 12%, transparent 12.5%, transparent 87%, var(--red-dark) 87.5%, var(--red-dark)),
-          linear-gradient(150deg, var(--red-dark) 12%, transparent 12.5%, transparent 87%, #8B9340 87.5%, #8B9340),
-          linear-gradient(30deg, var(--red-dark) 12%, transparent 12.5%, transparent 87%, #8B9340 87.5%, #8B9340),
-          linear-gradient(150deg, var(--red-dark) 12%, transparent 12.5%, transparent 87%, #8B9340 87.5%, #8B9340),
-          linear-gradient(60deg, var(--red-dark) 25%, transparent 25.5%, transparent 75%, #8B934077 75%, #8B934077),
-          linear-gradient(60deg, var(--red-dark) 25%, transparent 25.5%, transparent 75%, #8B934077 75%, #8B934077);
-  background-size: 22px 39px;
-  background-position: 0 0, 0 0, 11px 19px, 11px 19px, 0 0, 11px 19px;
+  opacity: 1;
+  background:
+          linear-gradient(135deg, #8B934055 25%, transparent 25%) -7px 0/ 14px 14px,
+          linear-gradient(225deg, #8B9340 25%, transparent 25%) -7px 0/ 14px 14px,
+          linear-gradient(315deg, #8B934055 25%, transparent 25%) 0px 0/ 14px 14px,
+          linear-gradient(45deg, #8B9340 25%, #F2E0D2 25%) 0px 0/ 14px 14px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
