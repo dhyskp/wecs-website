@@ -218,10 +218,8 @@ body {
 .committee-section {
   position: relative;
   overflow: hidden;
-  background-color: #F9CBD6;
-  opacity: 1;
-  background: radial-gradient(circle, transparent 20%, #F9CBD6 20%, #F9CBD6 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #F9CBD6 20%, #F9CBD6 80%, transparent 80%, transparent) 22.5px 22.5px, linear-gradient(#8B9340 1.8px, transparent 1.8px) 0 -0.9px, linear-gradient(90deg, #8B9340 1.8px, #F9CBD6 1.8px) -0.9px 0;
-  background-size: 45px 45px, 45px 45px, 22.5px 22.5px, 22.5px 22.5px;
+  background-image: url('images/backgrounds/3.jpg');
+  background-size: cover;
   background-position: center;
   color: white;
   padding: 100px 20px 60px;
@@ -282,11 +280,10 @@ body {
 .events-section {
   padding: 60px 20px;
   background-color: var(--cream);
-  background-image:
-    linear-gradient(rgba(158, 24, 43, 0.2) 5px, transparent 5px),
-    linear-gradient(90deg, rgba(158, 24, 43, 0.2) 5px, transparent 5px);
-  background-size: 70px 70px;
-  background-position: center center;
+  opacity: 1;
+  background-image:  linear-gradient(30deg, #8B9340 12%, transparent 12.5%, transparent 87%, #8B9340 87.5%, #8B9340), linear-gradient(150deg, #8B9340 12%, transparent 12.5%, transparent 87%, #8B9340 87.5%, #8B9340), linear-gradient(30deg, #8B9340 12%, transparent 12.5%, transparent 87%, #8B9340 87.5%, #8B9340), linear-gradient(150deg, #8B9340 12%, transparent 12.5%, transparent 87%, #8B9340 87.5%, #8B9340), linear-gradient(60deg, #8B934077 25%, transparent 25.5%, transparent 75%, #8B934077 75%, #8B934077), linear-gradient(60deg, #8B934077 25%, transparent 25.5%, transparent 75%, #8B934077 75%, #8B934077);
+  background-size: 22px 39px;
+  background-position: 0 0, 0 0, 11px 19px, 11px 19px, 0 0, 11px 19px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
