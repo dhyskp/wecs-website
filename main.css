@@ -280,12 +280,11 @@ body {
 .events-section {
   padding: 60px 20px;
   background-color: var(--cream);
-  opacity: 1;
-  background:
-          linear-gradient(135deg, #8B934055 25%, transparent 25%) -7px 0/ 14px 14px,
-          linear-gradient(225deg, #8B9340 25%, transparent 25%) -7px 0/ 14px 14px,
-          linear-gradient(315deg, #8B934055 25%, transparent 25%) 0px 0/ 14px 14px,
-          linear-gradient(45deg, #8B9340 25%, #F2E0D2 25%) 0px 0/ 14px 14px;
+  background-image:
+    linear-gradient(rgba(158, 24, 43, 0.2) 5px, transparent 5px),
+    linear-gradient(90deg, rgba(158, 24, 43, 0.2) 5px, transparent 5px);
+  background-size: 70px 70px;
+  background-position: center center;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
