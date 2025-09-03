@@ -218,12 +218,14 @@ body {
 .committee-section {
   position: relative;
   overflow: hidden;
-  background-image: url('images/backgrounds/3.jpg');
+  opacity: 1;
+  background: #F9CBD6 radial-gradient(circle, transparent 20%, #F9CBD6 20%, #F9CBD6 80%, transparent 80%, transparent) radial-gradient(circle, transparent 20%, #F9CBD6 20%, #F9CBD6 80%, transparent 80%, transparent) linear-gradient(#8B9340 1.8px, transparent 1.8px) linear-gradient(90deg, #8B9340 1.8px, #F9CBD6 1.8px) 22.5px 22.5px 0 -0.9px -0.9px 0;
   background-size: cover;
-  background-position: center;
   color: white;
   padding: 100px 20px 60px;
 }
+
+
 
 .divider {
   position: absolute;
