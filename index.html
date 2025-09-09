@@ -242,6 +242,48 @@
     <p>Women in ECS Society | University of Southampton</p>
   </footer>
 
+
+  <!-- Modal -->
+  <div class="modal" id="memberModal">
+    <div class="modal-content">
+      <button class="close-btn">&times;</button>
+      <img id="modalImg" src="" alt="Committee Member">
+      <h3 id="modalName"></h3>
+      <p id="modalRole"></p>
+      <p id="modalYear"></p>
+      <p id="modalBio"></p>
+    </div>
+  </div>
+
+  <script>
+    const modal = document.getElementById("memberModal");
+    const modalImg = document.getElementById("modalImg");
+    const modalName = document.getElementById("modalName");
+    const modalRole = document.getElementById("modalRole");
+    const modalYear = document.getElementById("modalYear");
+    const modalBio = document.getElementById("modalBio");
+    const closeBtn = modal.querySelector(".close-btn");
+
+    document.querySelectorAll(".member-card").forEach(card => {
+      card.addEventListener("click", () => {
+        modalImg.src = card.dataset.img;
+        modalName.textContent = card.dataset.name;
+        modalRole.textContent = card.dataset.role;
+        modalYear.textContent = card.dataset.year;
+        modalBio.textContent = card.dataset.bio;
+        modal.classList.add("active");
+      });
+    });
+
+    closeBtn.addEventListener("click", () => {
+      modal.classList.remove("active");
+    });
+
+    modal.addEventListener("click", e => {
+      if (e.target === modal) modal.classList.remove("active");
+    });
+  </script>
+
 </body>
 
 </html>
