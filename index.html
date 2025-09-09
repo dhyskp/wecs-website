@@ -42,12 +42,32 @@
     <div class="home-content">
       <img src="images/lily.png" alt="Women in ECS" class="home-img">
       <h1 class="home-title">Women in ECS</h1>
+      <p class="home-subtitle">
+        affiliated with susu, we are a society for women and non-binary folk in ecs.
+      </p>
+
+      <!-- join Us Button -->
+      <button class="join-btn" onclick="document.getElementById('join-form').style.display='flex'">
+        join us!
+      </button>
     </div>
     <!-- floating images -->
     <img src="images/decor/1.png" class="decor decor1" alt="">
     <img src="images/decor/11.png" class="decor decor2" alt="">
     <img src="images/decor/8.png" class="decor decor3" alt="">
   </section>
+
+  <div id="join-form" class="join-form">
+    <div class="join-form-content">
+      <button class="close-btn" onclick="document.getElementById('join-form').style.display='none'">&times;</button>
+      <h2>Join Our Mailing List</h2>
+      <p>Stay updated with our latest events and announcements!</p>
+      <form action="https://your-mailing-service.com/subscribe" method="POST">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
 
   <!-- about us section -->
   <section id="about" class="section about-section">
