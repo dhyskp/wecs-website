@@ -199,7 +199,7 @@ body {
   right: 0;
   width: 100%;
   height: 80px; /* adjust height */
-  background: var(--cream) url("images/decor/tile.jpg") repeat-x;
+  background: var(--cream) url("images/decor/12.png") repeat-x;
   background-size: auto 80px; /* scale height to fit */
   margin: 0;
   padding: 0;
@@ -597,7 +597,7 @@ body {
   }
 }
 
-/* mini-phone */ 
+/* mini-phone */
 @media (max-width: 600px) {
   .header {
     flex-direction: row;
