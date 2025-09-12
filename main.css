@@ -144,6 +144,7 @@ body {
   min-height: 100vh;
   background: linear-gradient(to bottom, var(--pink-light), var(--cream));
   display: flex;
+  flex-direction: column; /* stack text */
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -155,12 +156,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.home-img {
-  max-width: 250px;
-  width: 80%;
-  margin-bottom: 20px;
 }
 
 .home-title {
@@ -204,7 +199,7 @@ body {
   right: 0;
   width: 100%;
   height: 80px; /* adjust height */
-  background: var(--cream) url("images/decor/tile2.jpg") repeat-x;
+  background: var(--cream) url("images/decor/tile.jpg") repeat-x;
   background-size: auto 80px; /* scale height to fit */
   margin: 0;
   padding: 0;
@@ -549,6 +544,7 @@ body {
 }
 
 /* responsive breakpoints */
+/* mobile */
 @media (max-width: 768px) {
   .header {
     flex-direction: row;
@@ -579,9 +575,11 @@ body {
   }
 
   .marquee {
-    height: 80px;
+    display: none;
   }
 }
+
+/* tablet */
 
 @media (max-width: 992px) {
   .nav-container {
@@ -599,6 +597,7 @@ body {
   }
 }
 
+/* mini-phone */ 
 @media (max-width: 600px) {
   .header {
     flex-direction: row;
@@ -636,6 +635,6 @@ body {
   }
 
   .marquee {
-    height: 70px;
+    display: none;
   }
 }
