@@ -279,7 +279,7 @@ body {
 }
 
 .decor1 { top: 15%; left: 5%; }
-.decor3 { top: 30%; right: 20%; }
+.decor3 { top: 30%; right: 10%; }
 
 @keyframes float {
   from { transform: translateY(0); }
