@@ -148,7 +148,6 @@ body {
   justify-content: center;
   text-align: center;
   position: relative;
-  padding-bottom: 100px; /* space for marquee strip */
   overflow: hidden;
 }
 
@@ -188,7 +187,7 @@ body {
   cursor: pointer;
   margin-top: 15px;
   transition: background 0.3s ease, transform 0.2s ease;
-  box-shadow: -6px 6px 0 rgba(0, 0, 0, 0.4); /* solid shadow bottom-left */
+  box-shadow: -6px 6px 0 var(--green); /* solid shadow bottom-left */
 }
 
 .join-btn:hover {
@@ -208,12 +207,12 @@ body {
   background: var(--cream);
   margin: 0;
   padding: 0;
+  justify-content: center;
 }
 
 .marquee-content {
   display: flex;
   gap: 0;
-  animation: scroll 20s linear infinite;
 }
 
 .marquee-content img {
@@ -221,11 +220,6 @@ body {
   width: auto;
   display: block;
   object-fit: contain;
-}
-
-@keyframes scroll {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
 }
 
 /* join form popup */
