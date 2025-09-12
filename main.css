@@ -201,28 +201,13 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
+  right: 0;
   width: 100%;
-  overflow: hidden;
-  height: 100px;
-  background: var(--cream);
+  height: 80px; /* adjust height */
+  background: var(--cream) url("images/decor/tile2.jpg") repeat-x;
+  background-size: auto 80px; /* scale height to fit */
   margin: 0;
   padding: 0;
-  justify-content: center;
-  line-height: 0; /* removes inline image gaps */
-}
-
-.marquee-content {
-  display: flex;
-  gap: 0;
-  flex: 1;
-}
-
-.marquee-content img {
-  height: 100px;
-  width: auto;
-  display: block;
-  object-fit: contain;
-  flex-shrink: 0;
 }
 
 /* join form popup */
