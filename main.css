@@ -221,7 +221,7 @@ body {
 }
 
 
-/* Join Form Popup */
+/* join form popup */
 .join-form {
   display: none; /* hidden by default */
   position: fixed;
