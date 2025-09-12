@@ -208,11 +208,13 @@ body {
   margin: 0;
   padding: 0;
   justify-content: center;
+  line-height: 0; /* removes inline image gaps */
 }
 
 .marquee-content {
   display: flex;
   gap: 0;
+  flex: 1;
 }
 
 .marquee-content img {
@@ -220,6 +222,7 @@ body {
   width: auto;
   display: block;
   object-fit: contain;
+  flex-shrink: 0;
 }
 
 /* join form popup */
