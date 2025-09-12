@@ -148,6 +148,8 @@ body {
   justify-content: center;
   text-align: center;
   position: relative;
+  padding-bottom: 100px; /* space for marquee strip */
+  overflow: hidden;
 }
 
 .home-content {
@@ -186,25 +188,32 @@ body {
   cursor: pointer;
   margin-top: 15px;
   transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: -6px 6px 0 rgba(0, 0, 0, 0.4); /* solid shadow bottom-left */
 }
 
 .join-btn:hover {
   background: var(--pink-medium);
   transform: scale(1.05);
+  box-shadow: -6px 6px 0 rgba(0, 0, 0, 0.6);
 }
 
+/* marquee strip */
 .marquee {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   width: 100%;
   overflow: hidden;
+  height: 100px;
   background: var(--cream);
-  margin-top: 30px;
-  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 .marquee-content {
   display: flex;
   gap: 0;
-  animation: marquee 20s linear infinite;
+  animation: scroll 20s linear infinite;
 }
 
 .marquee-content img {
@@ -218,7 +227,6 @@ body {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
 }
-
 
 /* join form popup */
 .join-form {
@@ -285,11 +293,12 @@ body {
   color: var(--red-dark);
 }
 
+/* decorations */
 .decor {
   position: absolute;
   width: clamp(100px, 15vw, 200px);
   animation: float 6s ease-in-out infinite alternate;
-  z-index: 0; /* behind content */
+  z-index: 0;
 }
 
 .decor1 { top: 15%; left: 5%; }
@@ -477,8 +486,8 @@ body {
   padding: 60px 20px;
   background-color: var(--cream);
   background-image:
-    linear-gradient(rgba(158, 24, 43, 0.2) 5px, transparent 5px),
-    linear-gradient(90deg, rgba(158, 24, 43, 0.2) 5px, transparent 5px);
+          linear-gradient(rgba(158, 24, 43, 0.2) 5px, transparent 5px),
+          linear-gradient(90deg, rgba(158, 24, 43, 0.2) 5px, transparent 5px);
   background-size: 70px 70px;
   background-position: center center;
   min-height: 100vh;
@@ -567,7 +576,7 @@ body {
     display: block;
   }
 
-  .committee-section{
+  .committee-section {
     background-image: url("images/backgrounds/4.jpg");
   }
 
@@ -583,9 +592,12 @@ body {
     order: 3;
   }
 
-  /* show menu when checkbox checked */
   .menu-checkbox:checked ~ .nav-container {
     display: flex;
+  }
+
+  .marquee {
+    height: 80px;
   }
 }
 
@@ -614,7 +626,7 @@ body {
     padding: 15px;
   }
 
-  .committee-section{
+  .committee-section {
     background-image: url("images/backgrounds/4.jpg");
   }
 
@@ -640,5 +652,8 @@ body {
     gap: 10px;
     min-width: 100%;
   }
-}
 
+  .marquee {
+    height: 70px;
+  }
+}
